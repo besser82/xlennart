@@ -70,6 +70,8 @@ CreateMenuBar(const char *name, Widget parent) {
 					    menubar, XmNsubMenuId,
 					    pulldown, NULL);
 
+	if (game_menu || info_menu) {}
+
 	new_menu_item(pulldown, DIALOG_STORY);
 	new_menu_item(pulldown, DIALOG_RULES);
 	new_menu_item(pulldown, DIALOG_ABOUT);
