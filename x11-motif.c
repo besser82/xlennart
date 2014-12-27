@@ -32,15 +32,15 @@ static void
 popup(Widget w, XtPointer client_data, XtPointer call_data) {
 	UNUSED(w);
 	UNUSED(call_data);
-	x11_motif_popup_dialog((int)client_data);
+	x11_motif_popup_dialog((uintptr_t)client_data);
 }
 
 static Widget
-new_menu_item(Widget pulldown, int dialog) {
+new_menu_item(Widget pulldown, uintptr_t dialog) {
 	Widget menu_item = XtCreateManagedWidget(UI_menu_string(dialog),
 						 xmPushButtonWidgetClass,
 						 pulldown, NULL, 0);
-	XtAddCallback(menu_item, XmNactivateCallback, popup, (void *) dialog);
+	XtAddCallback(menu_item, XmNactivateCallback, popup, (XtPointer)dialog);
 	return menu_item;
 }
 

@@ -31,15 +31,15 @@ static void
 popup(Widget w, XtPointer client_data, XtPointer call_data) {
 	UNUSED(w);
 	UNUSED(call_data);
-	x11_athena_popup_dialog((int)client_data);
+	x11_athena_popup_dialog((uintptr_t)client_data);
 }
 
 static Widget
-new_menu_item(Widget pshell, int dialog) {
+new_menu_item(Widget pshell, uintptr_t dialog) {
 	Widget menu_item = XtCreateManagedWidget(UI_menu_string(dialog),
 						 smeBSBObjectClass,
 						 pshell, NULL, 0);
-	XtAddCallback(menu_item, XtNcallback, popup, (void *) dialog);
+	XtAddCallback(menu_item, XtNcallback, popup, (XtPointer) dialog);
 	return menu_item;
 }
 

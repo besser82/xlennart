@@ -1,3 +1,4 @@
+#include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -363,7 +364,7 @@ gtk_ui_initialize(int *argc, char **argv) {
 }
 
 static GtkWidget *
-new_menu_item(GtkWidget *menu, int dialog) {
+new_menu_item(GtkWidget *menu, uintptr_t dialog) {
 	GtkWidget *menu_item;
 
 	menu_item = gtk_menu_item_new_with_label(UI_menu_string(dialog));

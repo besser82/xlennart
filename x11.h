@@ -1,6 +1,8 @@
 #ifndef X11_WIDGETS_H
 #define X11_WIDGETS_H
 
+#include <inttypes.h>
+
 #include <X11/Xlib.h>
 #include <X11/Intrinsic.h>
 #include <X11/IntrinsicP.h>
