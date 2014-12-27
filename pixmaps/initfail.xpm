@@ -1,7 +1,7 @@
 /* XPM */
 static char * initfail_xpm[] = {
 "28 24 32 1",
-" 	c None",
+"	c None",
 ".	c #000000",
 "+	c #363636",
 "@	c #656565",

@@ -1,7 +1,7 @@
 /* XPM */
 static char * maccpu_xpm[] = {
 "55 45 10 1",
-" 	c None",
+"	c None",
 ".	c #888888",
 "X	c #bbbbbb",
 "o	c #cccccc",

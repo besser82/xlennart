@@ -74,7 +74,7 @@ Scorelist_recalc(const char *str, int level, int score) {
 	nl = strchr(tname,'\n');
 	if (nl != NULL)
 		*nl = 0;
-	
+
 	strcpy(scores[i].name, tname);
 	scores[i].level = level;
 	scores[i].score = score;

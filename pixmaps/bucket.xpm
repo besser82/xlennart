@@ -3,7 +3,7 @@ static char * bucket_xpm[] = {
 /* width height ncolors chars_per_pixel */
 "24 24 10 1",
 /* colors */
-" 	c #FFFFFF",
+"	c #FFFFFF",
 ".	c #1A1B1A",
 "X	c #191718",
 "o	c #ABABAC",

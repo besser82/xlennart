@@ -174,7 +174,7 @@ Game_update() {
 
 	switch (state) {
 	case STATE_PLAYING:
-		UI_clear(); 
+		UI_clear();
 		Bucket_draw();
 		Network_update();
 		Network_draw();

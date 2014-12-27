@@ -1,7 +1,7 @@
 /* XPM */
 static char * arch_xpm[] = {
 "28 24 14 1",
-" 	c None",
+"	c None",
 ".	c #FFFFFF",
 "+	c #1692D1",
 "@	c #1792D1",

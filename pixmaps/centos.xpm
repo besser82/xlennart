@@ -1,7 +1,7 @@
 /* XPM */
 static char * centos_xpm[] = {
 "28 24 45 1",
-" 	c None",
+"	c None",
 ".	c #939393",
 "+	c #FFFFFF",
 "@	c #FFFFCC",

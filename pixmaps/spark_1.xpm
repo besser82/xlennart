@@ -3,7 +3,7 @@ static char * spark_1_xpm[] = {
 /* width height ncolors chars_per_pixel */
 "20 20 4 1",
 /* colors */
-" 	c None",
+"	c None",
 ".	c #DB6503",
 "X	c #DC5D02",
 "o	c #FBFE0F",

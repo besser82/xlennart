@@ -7,7 +7,7 @@
 void
 Spark_load_pix(void);
 
-int 
+int
 Spark_width(void);
 
 int

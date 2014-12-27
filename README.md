@@ -40,7 +40,7 @@ another computer compatible with that os).  To extinguish a spark drag
 the bucket of water from the upper left corner onto it.
 
 The status bar at the bottom tells the following:
-	
+
 	Number of Lenns on/off the screen
 	Number of Computers running their init/off/SystenD
 	Level
@@ -48,20 +48,20 @@ The status bar at the bottom tells the following:
 
 ## Known Issues
 
-Though XLennart should work fine on most Linux and BSD distros, there are 
-still some problems since xBill is so old. 
+Though XLennart should work fine on most Linux and BSD distros, there are
+still some problems since xBill is so old.
 
-If you encounter a problem with Motif, V.R. from darknedgy.net did this to 
+If you encounter a problem with Motif, V.R. from darknedgy.net did this to
 compile XLennart:
 
 	./configure --disable-motif
 
 	Then I edited the Makefile and added -lXpm to LDFLAGS.
 
-	Then I had to edit UI.c and remove the #ifdef USE_MOTIF from the guis[] array, 
+	Then I had to edit UI.c and remove the #ifdef USE_MOTIF from the guis[] array,
 	otherwise I got a missing symbol error.
 
-	make 
+	make
 
 This might not be an issue anymore with the improvements done to 1.1
 
@@ -139,12 +139,12 @@ See README.Credits for everyone involved.
 
 ##Disclaimer
 
-XLennart is not a personal attack against anyone, it's just a harmless 
-parody/commentary on a situation in Linux and Unix history. I do not desire or 
-condone the act of violence against any of the Red Hat developers. Remember folks, 
+XLennart is not a personal attack against anyone, it's just a harmless
+parody/commentary on a situation in Linux and Unix history. I do not desire or
+condone the act of violence against any of the Red Hat developers. Remember folks,
 this is just a game!
 
-Also note that this game is NOT affiliated with Bloodbath Softworks, any mentions of 
-the copyright going to Bloodbath Softworks in the previous releases were simply a 
-mistake. Only relation Bloodbath has to XLennart is the current hosting of the main 
-page and files. This will be moved to another domain soon enough. 
+Also note that this game is NOT affiliated with Bloodbath Softworks, any mentions of
+the copyright going to Bloodbath Softworks in the previous releases were simply a
+mistake. Only relation Bloodbath has to XLennart is the current hosting of the main
+page and files. This will be moved to another domain soon enough.

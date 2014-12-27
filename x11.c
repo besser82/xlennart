@@ -305,7 +305,7 @@ x11_timer_active() {
 }
 
 /*
- * Main Loop 
+ * Main Loop
  */
 void
 x11_main_loop() {

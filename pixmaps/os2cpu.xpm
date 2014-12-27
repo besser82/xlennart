@@ -1,7 +1,7 @@
 /* XPM */
 static char * os2cpu_xpm[] = {
 "55 45 9 1",
-" 	c #888888",
+"	c #888888",
 ".	c None",
 "X	c #cccccc",
 "o	c #bbbbbb",

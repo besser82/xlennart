@@ -101,11 +101,11 @@ CreatePixmapBox(int index, Widget parent, Pixmap logo, Pixmap pixmap) {
 		XtNbitmap, logo, XtNborderWidth, 0, NULL);
 
 	if (pixmap)
-		XtVaCreateManagedWidget("", labelWidgetClass, base, 
+		XtVaCreateManagedWidget("", labelWidgetClass, base,
 					XtNbitmap, pixmap, XtNborderWidth,
 					0, NULL);
 	if (text != NULL)
-		XtVaCreateManagedWidget("", labelWidgetClass, base, 
+		XtVaCreateManagedWidget("", labelWidgetClass, base,
 			XtNlabel, text, XtNborderWidth, 0, NULL);
 
 	button = XtVaCreateManagedWidget("OK", commandWidgetClass, base, NULL);

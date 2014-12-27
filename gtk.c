@@ -197,7 +197,7 @@ typedef struct cursormap {
 static cursormap cursors[] = {
 	CURSOR_ADD(arch), CURSOR_ADD( bsd), CURSOR_ADD(centos),
 	CURSOR_ADD(debian), CURSOR_ADD(gentoo), CURSOR_ADD(mandriva),
-	CURSOR_ADD(openbsd), CURSOR_ADD(slackware), CURSOR_ADD(suse), 
+	CURSOR_ADD(openbsd), CURSOR_ADD(slackware), CURSOR_ADD(suse),
 	CURSOR_ADD(ubuntu), CURSOR_ADD(bucket),
 	CURSOR_ADD_MASKED(hand_up), CURSOR_ADD_MASKED(hand_down),
 	{NULL, 0, 0, NULL, NULL},
@@ -229,7 +229,7 @@ gtk_ui_load_cursor(const char *name, int masked, MCursor **cursorp) {
 						   c->width, c->height);
 	else
 		mask = bitmap;
-	cursor->cursor = gdk_cursor_new_from_pixmap(bitmap, mask, 
+	cursor->cursor = gdk_cursor_new_from_pixmap(bitmap, mask,
 						    &black, &white,
 						    c->width/2, c->height/2);
 	*cursorp = cursor;
@@ -334,7 +334,7 @@ gtk_ui_timer_active(void) {
 }
 
 /*
- * Main Loop 
+ * Main Loop
  */
 static void
 gtk_ui_main_loop(void) {
@@ -527,7 +527,7 @@ CreateDialog(int index, int hascancel, Picture *icon,
 	if (hascancel)
 		new_button(dialog, "Cancel", NULL, NULL);
 
-	gtk_widget_realize(dialog); 
+	gtk_widget_realize(dialog);
 	dialogs[index] = dialog;
 }
 
@@ -553,7 +553,7 @@ CreateEnterText(int index, GtkSignalFunc func) {
 
 	new_button(dialog, "OK", func, GTK_OBJECT(entry));
 
-	gtk_widget_realize(dialog); 
+	gtk_widget_realize(dialog);
 	dialogs[index] = dialog;
 }
 
@@ -585,7 +585,7 @@ CreatePixmapBox(int index, Picture *logo, Picture *pix) {
 
 	new_button(dialog, "OK", NULL, NULL);
 
-	gtk_widget_realize(dialog); 
+	gtk_widget_realize(dialog);
 	dialogs[index] = dialog;
 }
 

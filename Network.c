@@ -17,7 +17,7 @@ static Computer *computers;
 static int ncomputers;
 static Cable **cables;
 static int ncables;
-static int counters[NETWORK_COUNTER_MAX + 1]; 	/* number in each state */
+static int counters[NETWORK_COUNTER_MAX + 1];	/* number in each state */
 
 static int
 on(int level) {
@@ -28,7 +28,7 @@ on(int level) {
 /* sets up network for each level */
 void
 Network_setup() {
-	int i;	
+	int i;
 	ncomputers = on(Game_level());
 	if (computers != NULL)
 		free(computers);

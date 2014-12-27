@@ -159,7 +159,7 @@ Bill_draw(Bill *bill) {
 	}
 }
 
-/*  Update Bill's position */	
+/*  Update Bill's position */
 static void
 update_in(Bill *bill) {
 	int moved = move(bill, SLOW);
@@ -213,7 +213,7 @@ update_at(Bill *bill) {
 	}
 	bill->y_offset = height - OS_height();
 	switch (bill->index) {
-	case 1: 
+	case 1:
 	case 2:
 		bill->x -= 8;
 		bill->x_offset +=8;
@@ -258,7 +258,7 @@ update_at(Bill *bill) {
 		bill->sx = -7;
 		bill->x -= 8;
 		bill->x_offset +=8;
-		break;	
+		break;
 	case 10:
 		bill->sy = 0;
 		bill->sx = -7;
@@ -288,7 +288,7 @@ update_out(Bill *bill) {
 		move(bill, FAST);
 		bill->index++;
 		bill->index %= WCELS;
-		bill->y_offset += (8*(bill->index%2)-4); 
+		bill->y_offset += (8*(bill->index%2)-4);
 	}
 	else {
 		Horde_remove_bill(bill);
@@ -303,7 +303,7 @@ static void
 update_dying(Bill *bill) {
 	if (bill->index < DCELS - 1){
 		bill->y_offset += (bill->index * GRAVITY);
-		bill->index++;	
+		bill->index++;
 	}
 	else {
 		bill->y += bill->y_offset;

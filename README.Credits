@@ -12,7 +12,7 @@ Matias Duarte <matias@hyperimage.com> for XBill 2.0
 
 Gethyn ThomasQuail <xylem2020@gmail.com> for XLennart
 
-Daniel Reurich <daniel@reurich.kiwi.nz> for XLennart 
+Daniel Reurich <daniel@reurich.kiwi.nz> for XLennart
  graphical character rework.
 
 Additonal Credits :
@@ -21,5 +21,5 @@ Michael Shigorin <shigorin@gmail.com> for configure and
 makefile clean up. Along with the addition of the GTK2
 patch (1.1)
 
-Dmitrij D. Czarkoff <czarkoff@gmail.com> for small code 
+Dmitrij D. Czarkoff <czarkoff@gmail.com> for small code
 clean up (1.1) and OpenBSD modifications

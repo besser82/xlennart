@@ -53,7 +53,7 @@ XBMS =	bitmaps/arch.xbm bitmaps/bsd.xbm bitmaps/bucket.xbm bitmaps/centos.xbm \
 	bitmaps/hand_down_mask.xbm bitmaps/hand_up.xbm bitmaps/hand_up_mask.xbm \
 	bitmaps/initfail.xbm bitmaps/mandriva.xbm bitmaps/openbsd.xbm \
 	bitmaps/slackware.xbm bitmaps/suse.xbm bitmaps/ubuntu.xbm
-	
+
 
 MANDIR = man6
 MAN = xlennart.6

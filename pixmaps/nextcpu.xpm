@@ -1,7 +1,7 @@
 /* XPM */
 static char * nextcpu_xpm[] = {
 "55 45 6 1",
-" 	c None",
+"	c None",
 ".	c #333333",
 "X	c #000000",
 "o	c #669933",

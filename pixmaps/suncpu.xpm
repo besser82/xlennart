@@ -1,7 +1,7 @@
 /* XPM */
 static char * suncpu_xpm[] = {
 "55 45 7 1",
-" 	c #bbbbbb",
+"	c #bbbbbb",
 ".	c None",
 ",	c #ffffff",
 "X	c #eeeeee",

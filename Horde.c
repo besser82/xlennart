@@ -159,7 +159,7 @@ Horde_process_click(int x, int y) {
 			comp->stray = bill;
 		}
 		Bill_set_dying(bill);
-       		counter++;
+		counter++;
 	}
 	return counter;
 }
