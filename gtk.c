@@ -77,7 +77,7 @@ quit_game(void) {
 
 static void
 warp_apply(GtkWidget *text) {
-	char *str;
+	const char *str;
 	char *endp;
 	int newlevel;
 
@@ -90,7 +90,7 @@ warp_apply(GtkWidget *text) {
 
 static void
 enter_name(GtkWidget *text) {
-	char *str;
+	const char *str;
 
 	str = gtk_entry_get_text(GTK_ENTRY(text));
 	Game_add_high_score(str);
