@@ -23,8 +23,8 @@ Scorelist_read() {
 
 	if (scorefile != NULL) {
 		for (i = 0; i < SCORES; i++)
-			fscanf(scorefile, "%20s%d%d\n", scores[i].name,
-			       &scores[i].level, &scores[i].score);
+			if (fscanf(scorefile, "%20s%d%d\n", scores[i].name,
+			       &scores[i].level, &scores[i].score)) {}
 		fclose(scorefile);
 	}
 	else {
