@@ -165,7 +165,7 @@ timer_tick(gpointer arg) {
  * Cursor handling
  */
 
-#include "bitmaps/initfail.xbm"
+/* #include "bitmaps/initfail.xbm"	// unused */
 #include "bitmaps/arch.xbm"
 #include "bitmaps/bsd.xbm"
 #include "bitmaps/centos.xbm"
