@@ -370,7 +370,8 @@ new_menu_item(GtkWidget *menu, uintptr_t dialog) {
 	menu_item = gtk_menu_item_new_with_label(UI_menu_string(dialog));
 	gtk_menu_append(GTK_MENU(menu), menu_item);
 	gtk_signal_connect_object(GTK_OBJECT(menu_item), "activate",
-				  gtk_ui_popup_dialog, (gpointer) dialog);
+				  (GCallback) gtk_ui_popup_dialog,
+				  (gpointer) dialog);
 	return (menu_item);
 }
 
@@ -592,7 +593,7 @@ static void
 gtk_ui_create_dialogs(Picture *logo, Picture *icon, Picture *about) {
 	CreateDialog(DIALOG_NEWGAME, 1, NULL, NULL, new_game);
 	CreateDialog(DIALOG_PAUSEGAME, 0, icon, "Continue", NULL);
-	CreateEnterText(DIALOG_WARPLEVEL, warp_apply);
+	CreateEnterText(DIALOG_WARPLEVEL, (GtkSignalFunc) warp_apply);
 	CreateDialog(DIALOG_HIGHSCORE, 0, NULL, NULL, NULL);
 	CreateDialog(DIALOG_QUITGAME, 1, NULL, NULL, quit_game);
 
@@ -602,7 +603,7 @@ gtk_ui_create_dialogs(Picture *logo, Picture *icon, Picture *about) {
 
 	CreateDialog(DIALOG_SCORE, 0, NULL, NULL, NULL);
 	CreateDialog(DIALOG_ENDGAME, 0, NULL, "Nuts!", NULL);
-	CreateEnterText(DIALOG_ENTERNAME, enter_name);
+	CreateEnterText(DIALOG_ENTERNAME, (GtkSignalFunc) enter_name);
 }
 
 static void
